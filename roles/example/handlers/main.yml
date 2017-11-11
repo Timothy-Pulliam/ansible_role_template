@@ -1,0 +1,5 @@
+---
+- name: restart service
+  systemd:
+    name: service.unit
+    state: restart

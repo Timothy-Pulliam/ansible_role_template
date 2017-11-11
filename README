@@ -1,0 +1,31 @@
+Example ansible role implementation. The structure looks like this:
+
+.
+├── hosts
+├── playbooks
+│   └── example.yml
+├── README
+└── roles
+    └── example
+        ├── files
+        ├── handlers
+        │   └── main.yml
+        ├── meta
+        │   └── main.yml
+        ├── tasks
+        │   └── main.yml
+        ├── templates
+        └── vars
+            └── main.yml
+
+To run the example role, execute the following command:
+
+$ ansible-playbook playbooks/example.yml
+
+example.yml contains the following:
+
+---
+- hosts: all
+  roles:
+    - example
+
